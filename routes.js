@@ -10,7 +10,7 @@ const requestHandler = (req, res) =>{
     if (url === '/'){
         res.setHeader('Content-Type', 'text/html');
         res.write('<html >');
-        res.write('<head><title>My first page </title></header>');
+        res.write('<header><title>Enter a message </title></header>');
         res.write('<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>');
         res.write('</html>');
         return res.end();
@@ -33,11 +33,10 @@ const requestHandler = (req, res) =>{
             });
         });
     }
-    
     res.setHeader('Content-Type', 'text/html');
     res.write('<html >');
-    res.write('<head><title>My first page </title></header>');
-    res.write('<body><h1>Hello from NodeJs Server!</h1></body>');
+    res.write('<head><title>My first page 1 </title></header>');
+    res.write('<body><h1>Hello from Node.Js Server!</h1></body>');
     res.write('</html>');
 }
 
